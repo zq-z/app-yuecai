@@ -30,15 +30,15 @@ class TestLogin:
     @pytest.mark.parametrize(("username","password","result_except"),get_login())
     @allure.story("登录")
     def test_login(self,username,password,result_except):
-         @allure.step("输入手机号"):
-             self.login.input_phone(username)
+
+         self.login.input_phone(username)
 
 
-             self.login.input_password(password)
+         self.login.input_password(password)
 
-             self.login.click_checkbox()
+         self.login.click_checkbox()
 
-             self.login.click_login_button()
+         self.login.click_login_button()
          try:
             assert result_except=="手机号不正确"
 
