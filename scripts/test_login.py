@@ -45,7 +45,8 @@ class TestLogin:
          except AssertionError as e:
             sleep(2)
             self.login.get_screen()
-
+if __name__ == '__main__':
+    pytest.main(["test_login.py"])
 
 
 
