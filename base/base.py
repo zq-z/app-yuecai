@@ -58,6 +58,8 @@ class Base:
             return True
         except:
             print('A')
+            print('A')
+
             return False
 
 
