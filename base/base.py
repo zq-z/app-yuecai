@@ -58,7 +58,7 @@ class Base:
             return True
         except:
             print('A')
-            print('U')
+            
 
             return False
 
